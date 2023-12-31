@@ -482,10 +482,25 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-third">
+          <p class="third-caption">Subscribe</p>
+          <form class="subscribe-form" name="subscribe">
+            <label class="subscribe-form-field">
+              <input class="subscribe-input" type="email" placeholder="Email" />
+            </label>
+            <button type="submit" class="subscribe-btn">
+              Subscribe
+              <svg class="subscribe-svg" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close" type="button" aria-label="modal-close-btn">
           <svg class="close" width="8px" height="8px">
@@ -497,29 +512,67 @@
         </p>
 
         <form class="modal-form" name="user-contacts">
-          <label class="form-label" for="user-name">Name</label>
-          <div class="form-field">
-            <input class="user-name" type="text" id="user-name" />
-            <svg class="user_name_svg" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+          <div class="modal-form-wrapper">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="form-field">
+              <input class="user-name" type="text" id="user-name" />
+              <svg class="user_name_svg" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
 
-          <label class="form-label" for="user-phone">Phone</label>
-          <div class="form-field">
-            <input class="user-phone" type="text" id="user-phone" />
-            <svg class="user_phone_svg" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+          <div class="modal-form-wrapper">
+            <label class="form-label" for="user-phone">Phone</label>
+            <div class="form-field">
+              <input class="user-phone" type="tel" id="user-phone" />
+              <svg class="user_phone_svg" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
-          <label class="form-label" for="user-email">Email</label>
-          <div class="form-field">
-            <input class="user-email" type="text" id="user-email" />
-            <svg class="user_email_svg" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+          <div class="modal-form-wrapper">
+            <label class="form-label" for="user-email">Email</label>
+            <div class="form-field">
+              <input class="user-email" type="email" id="user-email" />
+              <svg class="user_email_svg" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
+
+          <div class="modal-text-area">
+            <label class="form-label" name="text-area" for="user-message"
+              >Comment
+            </label>
+            <textarea
+              class="text-area"
+              name="user-message"
+              id="user-message"
+              rows="7"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <label class="form-agreement">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="user-agreement"
+              value="false"
+              checked
+            />
+            <span class="form-agreement-checkbox">
+              <svg class="form-agreement-svg" width="10px" height="8px">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a href="" class="form-agreement-link">Privacy Policy</a>
+          </label>
+
+          <button class="form-send" type="submit">Send</button>
         </form>
       </div>
     </div>
