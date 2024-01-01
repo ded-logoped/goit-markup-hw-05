@@ -803,11 +803,11 @@ img {
 .checkbox .visually-hidden:checked .form-agreement-checkbox {
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
 }
 
 .checkbox:checked + .form-agreement-checkbox > .form-agreement-svg {
   opacity: 1;
+  fill: #f4f4fd;
 }
 
 .form-send {
