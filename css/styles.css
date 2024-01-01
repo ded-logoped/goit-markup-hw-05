@@ -755,10 +755,6 @@ img {
   letter-spacing: 0.04em;
 }
 
-.send-wrapper {
-  margin-bottom: 24px;
-}
-
 .form-agreement {
   display: block;
   margin-bottom: 24px;
@@ -771,13 +767,13 @@ img {
 }
 
 .form-agreement-checkbox {
-  fill: transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
   height: 16px;
   border-radius: 2px;
+  fill: transparent;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -808,6 +804,9 @@ img {
   > .form-agreement-checkbox
   > .form-agreement-svg {
   opacity: 1;
+}
+.send-wrapper {
+  margin-bottom: 24px;
 }
 
 .form-send {
