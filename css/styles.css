@@ -628,7 +628,6 @@ img {
   cursor: pointer;
 }
 
-.modal-close:focus,
 .modal-close:hover {
   background-color: #404bbf;
   border: none;
