@@ -595,6 +595,9 @@ img {
 }
 
 .backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
   background-color: rgba(46, 47, 66, 0.4);
   width: 100vw;
   height: 100vh;
@@ -708,9 +711,7 @@ img {
   border: 1px solid #2e2f4266;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.user_name_svg,
-.user_phone_svg,
-.user_email_svg {
+.user_svg {
   position: absolute;
   top: 50%;
   left: 16px;
