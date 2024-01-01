@@ -778,12 +778,13 @@ img {
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   margin-left: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .form-agreement-link {
@@ -796,17 +797,17 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .form-agreement > .form-agreement-checkbox {
+.visually-hidden:checked + .form-agreement > .form-agreement-checkbox {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
 
-.checkbox:checked
+.visually-hidden:checked
   + .form-agreement
   > .form-agreement-checkbox
   > .form-agreement-svg {
   opacity: 1;
-  fill: #f4f4fd;
 }
 
 .form-send {
