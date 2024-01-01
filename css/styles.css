@@ -774,8 +774,7 @@ img {
   letter-spacing: 0.04em;
   user-select: none;
 }
-.checkbox {
-}
+
 .form-agreement-checkbox {
   fill: transparent;
   display: inline-flex;
@@ -801,7 +800,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked .form-agreement-checkbox {
+.checkbox .visually-hidden:checked .form-agreement-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
