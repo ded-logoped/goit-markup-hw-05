@@ -520,8 +520,13 @@
           <div class="modal-form-wrapper">
             <label class="form-label" for="user-name">Name</label>
             <div class="form-field">
-              <input class="user-name" type="text" id="user-name" />
-              <svg class="user_name_svg" width="18px" height="18px">
+              <input
+                class="user-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="user_name_svg" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -530,7 +535,7 @@
           <div class="modal-form-wrapper">
             <label class="form-label" for="user-phone">Phone</label>
             <div class="form-field">
-              <input class="user-phone" type="tel" id="user-phone" />
+              <input class="user-input" type="tel" id="user-phone" />
               <svg class="user_phone_svg" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
@@ -540,7 +545,7 @@
           <div class="modal-form-wrapper">
             <label class="form-label" for="user-email">Email</label>
             <div class="form-field">
-              <input class="user-email" type="email" id="user-email" />
+              <input class="user-input" type="email" id="user-email" />
               <svg class="user_email_svg" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -548,32 +553,36 @@
           </div>
 
           <div class="modal-text-area">
-            <label class="form-label" for="user-message">Comment </label>
+            <label class="form-label" for="user-comment">Comment </label>
             <textarea
               class="text-area"
               name="user-message"
-              id="user-message"
+              id="user-comment"
+              name="user-comment"
               rows="7"
               placeholder="Text input"
             ></textarea>
           </div>
 
-          <label class="form-agreement">
+          <div class="send-wrapper">
             <input
               class="checkbox visually-hidden"
               type="checkbox"
-              name="user-agreement"
-              value="false"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
               checked
             />
-            <span class="form-agreement-checkbox">
-              <svg class="form-agreement-svg" width="10px" height="8px">
-                <use href="./images/icons.svg#icon-vector"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a href="" class="form-agreement-link">Privacy Policy</a>
-          </label>
+
+            <label class="form-agreement" for="user-privacy"
+              ><span class="form-agreement-checkbox">
+                <svg class="form-agreement-svg" width="10px" height="8px">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a href="" class="form-agreement-link">Privacy Policy</a></label
+            >
+          </div>
 
           <button class="form-send" type="submit">Send</button>
         </form>
